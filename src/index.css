@@ -1,0 +1,12 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 62.5%;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+:root {
+  background-color: rgb(89, 166, 188);
+}

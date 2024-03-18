@@ -1,0 +1,21 @@
+.form-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 1.8rem auto 0;
+}
+
+#input {
+  padding: 1rem 2rem;
+  border-radius: 16px;
+  border: 1px solid rgb(176, 233, 255);
+  background-color: rgb(248, 253, 255);
+  font-size: 1.6rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+.type-grass {
+  background-color: rgb(11, 145, 27);
+  color: black;
+}

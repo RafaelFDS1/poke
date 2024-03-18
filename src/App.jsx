@@ -1,17 +1,19 @@
 import { useEffect, useState } from "react";
 import "./App.css";
+import Cards from "./components/cards";
 import Pokemon from "./components/pokemon";
-import request from "./utils/pokemon";
+import { pokeRequest, tcgRequest } from "./utils/pokemon";
 
 const App = () => {
   const [success, setSuccess] = useState(false);
   const [pokemon, setPokemon] = useState();
+  const [cards, setCards] = useState();
 
   const onSubmit = (e) => {
     e.preventDefault();
-    request(e.target[0].value).then((response) => {
+    pokeRequest(e.target[0].value).then((response) => {
       setPokemon(response);
-      console.log(response);
+      setSuccess(true);
     });
     e.target[0].value = "";
   };
@@ -20,15 +22,19 @@ const App = () => {
     if (!success) {
       return;
     }
-    console.log("sucesso!");
+    tcgRequest(pokemon.name).then((response) => {
+      setCards(response);
+      setSuccess(false);
+    });
   }, [success]);
 
   return (
     <div className="app">
-      <form onSubmit={onSubmit}>
+      <form className="form-container" onSubmit={onSubmit}>
         <input type="search" name="" id="input" />
       </form>
       {pokemon && <Pokemon object={pokemon} />}
+      {cards && <Cards object={cards.data} />}
     </div>
   );
 };
