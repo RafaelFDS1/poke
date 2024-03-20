@@ -23,6 +23,11 @@
   background-color: rgb(50, 97, 110);
   padding: 20px 0;
 }
+.poke-cards {
+  width: calc(100% / 6);
+}
+
 .poke-cards > img {
-  width: 245px;
+  width: 100%;
+  flex-grow: 1;
 }
