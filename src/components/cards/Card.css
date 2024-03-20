@@ -1,3 +1,28 @@
 .pokemon-name-card {
+  display: inline-block;
   text-transform: capitalize;
+  margin: 30px 175px 0;
+  padding: 10px 20px;
+  background-color: rgb(50, 97, 110);
+  color: rgb(218, 217, 217);
+  border-radius: 15px 15px 0 0;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px 10px;
+  margin: 0 auto;
+  width: 75%;
+}
+
+.container-general {
+  background-color: rgb(50, 97, 110);
+  padding: 20px 0;
+}
+.poke-cards > img {
+  width: 245px;
 }

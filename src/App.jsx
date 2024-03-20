@@ -34,7 +34,7 @@ const App = () => {
         <input type="search" name="" id="input" />
       </form>
       {pokemon && <Pokemon object={pokemon} />}
-      {cards && <Cards object={cards.data} />}
+      {cards && <Cards object={cards.data} pokeName={pokemon.name} />}
     </div>
   );
 };
