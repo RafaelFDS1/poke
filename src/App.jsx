@@ -11,7 +11,7 @@ const App = () => {
 
   const onSubmit = (e) => {
     e.preventDefault();
-    pokeRequest(e.target[0].value).then((response) => {
+    pokeRequest(e.target[0].value.toLowerCase()).then((response) => {
       setPokemon(response);
       setSuccess(true);
     });

@@ -1,0 +1,85 @@
+.poke-name {
+  text-transform: capitalize;
+  text-align: center;
+  margin: 40px auto;
+}
+
+.poke-id {
+  color: rgb(73, 73, 73);
+}
+
+.poke-info {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.poke-sprite {
+  background-color: rgb(82, 158, 179);
+  border-radius: 8px;
+}
+
+.stats-container {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 20px;
+  border-radius: 16px;
+  margin: 25px 0 0;
+  align-items: start;
+  background-color: rgb(65, 125, 142);
+}
+
+.stats {
+  text-transform: capitalize;
+  display: flex;
+  padding: 16px;
+  gap: 15px;
+  text-align: center;
+}
+
+.stat {
+  display: flex;
+  width: 70px;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.stat-values {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.block {
+  width: 70px;
+  height: 10px;
+}
+
+.stat-blank-value {
+  background-color: rgb(208, 216, 222);
+}
+
+.stat-true-value {
+  background-color: rgb(62, 144, 250);
+}
+
+.poke-type {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: 10px 0 0;
+  gap: 10px;
+}
+
+.type {
+  flex-grow: 1;
+  padding: 8px 0;
+  text-align: center;
+  border-radius: 8px;
+  text-transform: capitalize;
+}
